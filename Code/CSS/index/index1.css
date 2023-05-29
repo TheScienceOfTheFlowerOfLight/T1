@@ -1,0 +1,356 @@
+/*sssss
+sss
+sss
+*/
+/* 
+    selector{
+        perporty: value;
+    }
+*/
+h1,#h,.h,[title="hhh"],h1[title="hhh"]#h.h,*,* *,.h .h2 .hh,h1:first-child,h1:last-child,h1:first-of-type,h1:nth-of-type(odd){
+    color: rgba(16, 172, 120, 0.658);
+}
+
+.a1:hover,.a1:active,
+.a1:focus,.a1:valid,.a1:invalid,.a1:checked,.a1:disabled{
+    width: 12px;
+
+    color: red;
+}
+
+.a1{
+    width: 30px;
+
+    color: blue;
+
+    transition:1s color 0.5s ease-in-out,1s width;
+}
+
+.a2{
+    display: inline;
+}
+
+.a3{
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#a3{
+    order: 3;
+    align-self: start;
+    flex-basis: 12px;
+    flex-grow: 1;
+}
+
+.a4{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,500px);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    '11 12 13 14 15'
+    '21 22 23 24 25'
+    ;
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+}
+
+.a4_1{
+    grid-area: '11';
+    align-self: center;
+}
+
+.a4_2{
+    grid-area: 1/2/2/3;
+}
+
+.a5{
+    width: 10px 10% 1fr 1rem 1em 1vw 1vh 1pt;
+}
+
+.a6{
+    direction: rtl;
+    float: right;
+    float: none;
+    transform: translateX(-100),translateY(50);
+    transform: rotate(90deg) translateX(100);
+    position: absolute;
+    top: 100px;
+    left: 1500px;
+}
+
+.a7{
+    width: 10%;
+    height: 300px;
+    min-width: 100px;
+    max-width: 700px;
+    aspect-ratio: 3/1;
+    padding: 1rem 3%;
+    margin: 1rem 3%;
+    
+    overflow: scroll;
+    resize: vertical;
+
+    clip-path: polygon();
+
+    transform: scale(1.5,1),scaleX(-1),scaleY(1),rotate(30deg),skew(30deg,10deg);
+    transform: none;
+
+    cursor: pointer;
+    object-fit: contain;
+    list-style: url();
+}
+
+.a8{
+    border-width: 1rem;
+    border-color: rgba(16, 172, 120, 0.658);
+    border-style: solid;
+    border-radius: 30px;
+    border: 1rem red solid;
+    border: none;
+    box-sizing: border-box;
+
+    outline-width: 100rem;
+    outline-color: blue;
+    outline-style: dashed;
+    outline-offset: -100px;
+    outline: 1rem rgba(12, 207, 61, 0.753) dotted;
+    outline: none;
+
+    text-shadow: 0 0 15px red,0 0 15px red,0 0 15px red;
+    text-shadow: 1px 0 red,-1px 0 red,0 1px red, 0 -1px red,1px -1px red,1px 1px red,-1px 1px red,-1px -1px red; 
+}
+
+.a9{
+    box-shadow: 11px 11px 10px 10px red,inset 11px 11px 10px 10px greenyellow;
+
+    text-shadow: 10px 10px 10px red;
+    
+    filter: drop-shadow(10px 10px 10px green);
+}
+
+.a10{
+    background: red,linear-gradient(45deg,red 30%,green 40%,blue 30%),conic-gradient(from 90deg,at 10% 50%,red 25%,green 50%,blue 25%),repeating-conic-gradient(red 5%,green 5%,blue 5%),url();
+    background-size: 300px 300px;
+    background-attachment: local;
+    background-position: top center;
+    background-position-X: 75%;
+    background-position-Y: 30%;
+    background-repeat: repeat;
+}
+
+.a11{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    filter: brightness(100%),contrast(100%),saturate(10),sepia(30%),grayscale(30%),hue-rotate(30deg),invert(10%);
+    filter: none;
+
+    accent-color: green;
+}
+
+.a12{
+    font-family: 'Cairo',serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    
+    text-decoration: line-through wavy fuchsia;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+    text-align: right;
+    line-height: 100px;
+}
+
+.a13{
+    visibility: hidden;
+    opacity: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes ani{
+    /* from{}
+    to{} */
+
+    0%{}
+
+    10%{}
+
+    50%{}
+
+    90%{}
+}
+
+@keyframes ani2{
+    30%{}
+}
+
+.a14{
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.5,0,0.33,5000);
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+    animation: ani 1s linear normal forwards 3,
+               ani2 1s linear reverse 1;
+    animation-delay: 3s,1s; 
+}
+
+.a15{
+    color: inherit;
+    width: calc(10% + 15px) !important;   
+}
+
+.a16::before{
+    content: url();
+
+}
+
+html::-webkit-scrollbar{
+    width: 100px;
+    height: 900px;
+}
+
+html::-webkit-scrollbar-track{
+    width: 90px;
+
+    border: 5px solid red;
+    border-radius: 30px;
+
+    background: rgba(12, 207, 61, 0.753);
+}
+
+html::-webkit-scrollbar-thumb{
+    width: 70px;
+
+    border-radius: 30px;
+
+    background: black;
+}
+
+meter::-webkit-meter-bar{
+
+}
+
+meter::-webkit-meter-even-less-good-value{
+
+}
+
+meter::-webkit-meter-suboptimum-value{
+
+}
+
+meter::-webkit-meter-optimum-value{
+
+}
+
+meter{
+
+}
+
+.range{
+    appearance: none;
+
+    overflow: hidden;
+
+}
+
+.range::-webkit-slider-thumb{
+    appearance: none;
+
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+
+    background: green;
+
+    box-shadow: 500px 0 0 490px greenyellow;
+}
+
+.range::-webkit-slider-thumb:active{
+    background: white;
+
+    box-shadow: 500px 0 0 490px greenyellow,inset 0 0 0 10px red;
+}
+
+@media print{
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) and (orientation: landscape) and (orientation: portrait) {
+
+}
+
+
+
+/* ******************************************** */
+.p1{
+    outline: 1000px solid black;
+    outline-offset: -1000px;
+}
+
+.p1:hover{
+    outline: 15px solid blue;
+    outline-offset: 10px;
+    outline-color: transparent; 
+}
+
+.p2{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    background: rgba(12, 207, 61, 0.753);
+
+    animation: y 4s cubic-bezier(0.55,0,0.3,-5000) forwards,
+               x 4s linear forwards,
+               x2 1s linear forwards,
+               cricle 3s linear forwards,
+               x3 1s linear forwards;
+    animation-delay: 0s,0s,4s,5s,8s;
+}
+
+@keyframes y{
+    to{top:29.9vh;}
+}
+
+@keyframes x{to{left:20vw;}}
+
+@keyframes x2{
+    to{left: 25vw;}
+}
+
+@keyframes cricle {
+    from{
+        transform: rotate(0deg) translateY(50);
+    }
+
+    to{
+        transform: rotate(-360deg) translateY(50);
+    }
+}
+
+@keyframes x3{
+    to{left: 35vw;}
+}
+

@@ -1,0 +1,75 @@
+//sass
+/* dddddd
+dddd
+ddd
+*/
+@use '../items';
+@use './header';
+
+$text: 'Hi';
+$v1: 11px;
+$v2: (11px,12px,13px);
+$v3: (
+    'p1' 11px red,
+    'p2' 12px blue,
+);
+
+.#{$text}{
+    width: $v1;
+}
+
+@mixin m1($w,$c){
+    width: $w;
+    color: $c;
+}
+
+.dd{
+    @include m1(11px, red);
+}
+
+@function f1($n){
+    @return $n + 10;
+}
+
+.d{
+    width: f1(11px);
+}
+
+@for $i from 1 to 11{
+
+} 
+
+@each $name,$width,$color in $v3{
+    .#{$name}{
+        width: $width;
+        color: $color;
+    }
+}
+
+@if (){
+
+} @else if(){
+
+} @else{
+
+}
+
+.s{
+    width: 11px;
+    height: 11px + 100;
+    font-size: calc(11px + 3%);
+
+    .dd{
+        .ddd{
+
+        }
+    }
+
+    .q{
+
+    }
+
+    &:hover{
+
+    }
+}
